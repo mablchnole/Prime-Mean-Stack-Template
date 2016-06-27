@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title>MEAN Stack Review - Weekend Challenge Live Solve</title>
@@ -8,6 +8,11 @@
   </head>
   <body>
     <h1>MEAN Stack Review - Weekend Challenge Live Solve</h1>
+    <div ng-controller="mondayController">
+      <input type="text" ng-model="notATextArea" name="name" value="" placeholder="2 way tester">
+      {{ notATextArea }}<br />
+      <button type="button" name="button" ng-click="whatAreWeTryingToDo()">Check Input</button>
+    </div>
 
   </body>
 </html>
